@@ -1,0 +1,95 @@
+<!-- Página principal (Estructura semántica, bienvenida, resumen) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando la Biblioteca de las Artes - Guayaquil</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteca de las Artes</h1>
+        <p>Un núcleo de dinamización cultural, educativa y social en Guayaquil</p>
+    </header>
+
+    <main>
+        <!-- Estructura general / Justificación -->
+        <section>
+            <h2>Justificación del Proyecto</h2>
+            <p>La participación ciudadana en los espacios de lectura y encuentro cultural dentro de la Biblioteca de las Artes involucra a un público sumamente variado: desde niños y familias en la Sala Ría, hasta estudiantes universitarios, investigadores y artistas locales. Este espacio democratiza el arte y la literatura, ofreciendo un entorno gratuito y seguro para el aprendizaje continuo.</p>
+        </section>
+
+        <!-- Diseño por columnas (Testimonios y Voces de la Comunidad) -->
+        <section>
+            <h2>Voces de la Comunidad</h2>
+            <div class="grid-columns">
+                <article style="background: #edf2f7; padding: 1.5rem; border-radius: 6px;">
+                    <h3>Estudiantes e Investigadores</h3>
+                    <p>Un espacio tranquilo y eficiente, ideal para realizar tareas, acceder a equipos de cómputo y préstamo bibliográfico enfocado en humanidades y artes.</p>
+                </article>
+                <article style="background: #edf2f7; padding: 1.5rem; border-radius: 6px;">
+                    <h3>Familias y Niños</h3>
+                    <p>Experiencias lúdicas y educativas a través del cine infantil de los sábados, talleres de dibujo y espacios inclusivos que fomentan la lectura desde temprana edad.</p>
+                </article>
+                <article style="background: #edf2f7; padding: 1.5rem; border-radius: 6px;">
+                    <h3>Diseñadores y Artistas</h3>
+                    <p>Destacan la accesibilidad y el impacto cultural positivo que genera este punto de encuentro en pleno centro de Guayaquil.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Embebe multimedios -->
+        <section>
+            <h2>Multimedia Cultural</h2>
+            <p>Conoce un poco más de las actividades y talleres que se desarrollan:</p>
+            <div style="text-align: center;">
+                <video controls width="100%" style="max-width: 600px; border-radius: 8px;">
+                    <source src="assets/multimedios/video-biblioteca.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </section>
+
+        <!-- Embebe un mapa geográfico -->
+        <section>
+            <h2>¿Dónde nos encontramos?</h2>
+            <p>Ubicación de la Biblioteca de las Artes en el corazón de Guayaquil:</p>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.996538965743!2d-79.8845!3d-2.1962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6df231c5cf13%3A0x88981669438997a0!2sBiblioteca%20de%20las%20Artes!5e0!3m2!1ses!2sec!4v1650000000000!5m2!1ses!2sec" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- Utiliza un formulario adaptado a los hallazgos de campo -->
+        <section>
+            <h2>Buzón de Experiencias y Aportes de la Comunidad</h2>
+            <p>Comparte tu perspectiva o la de tu familia sobre los espacios de la biblioteca:</p>
+            <form id="encuesta-form">
+                <label for="nombre">Nombre o Seudónimo:</label>
+                <input type="text" id="nombre" placeholder="Ej. Fátima Torres" required>
+
+                <label for="espacio">¿Qué espacio o actividad te llama más la atención?</label>
+                <select id="espacio" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="sala-ria">Sala Ría (Espacio infantil)</option>
+                    <option value="lectura">Zonas de lectura general e investigación</option>
+                    <option value="cine-talleres">Cine abierto y talleres culturales</option>
+                    <option value="prestamo">Préstamo de equipos y computadoras</option>
+                </select>
+
+                <label for="comentario">Cuéntanos tu experiencia o qué te gustaría ver en el sitio web:</label>
+                <textarea id="comentario" rows="4" placeholder="Ej. Me gustaría ver recomendaciones de libros o más herramientas de inclusión..." required></textarea>
+
+                <button type="submit">Enviar Aporte</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyecto Biblioteca de las Artes | Fátima Torres & César Balladares</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

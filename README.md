@@ -1,4 +1,3 @@
-# explorando-la-cultura-con-la-web
 # Proyecto 02: Explorando la cultura con la web
 ## Integrantes:
 - Fátima Torres
